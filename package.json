@@ -1,0 +1,32 @@
+{
+  "name": "cat-herd",
+  "version": "0.0.1",
+  "description": "Get a readable stream spanning an array of files",
+  "main": "dist/es5/CatHerd.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel/register",
+    "compile": "babel --source-maps inline --out-dir dist/es5/lib lib",
+    "preversion": "npm test && npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desertnet/cat-herd.git"
+  },
+  "keywords": [
+    "cat",
+    "concat",
+    "readable",
+    "stream",
+    "files"
+  ],
+  "author": "Eric McCarthy <eric@limulus.net> (http://www.limulus.net/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/desertnet/cat-herd/issues"
+  },
+  "homepage": "https://github.com/desertnet/cat-herd#readme",
+  "devDependencies": {
+    "babel": "^5.8.20",
+    "mocha": "^2.2.5"
+  }
+}
