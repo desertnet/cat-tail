@@ -1,8 +1,8 @@
 {
-  "name": "cat-herd",
+  "name": "cat-tail",
   "version": "0.0.1",
   "description": "Get a readable stream spanning an array of files",
-  "main": "dist/es5/CatHerd.js",
+  "main": "dist/es5/CatTail.js",
   "scripts": {
     "test": "mocha --compilers js:babel/register",
     "compile": "babel --source-maps inline --out-dir dist/es5/lib lib",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/desertnet/cat-herd.git"
+    "url": "git+https://github.com/desertnet/cat-tail.git"
   },
   "keywords": [
     "cat",
@@ -22,9 +22,9 @@
   "author": "Eric McCarthy <eric@limulus.net> (http://www.limulus.net/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/desertnet/cat-herd/issues"
+    "url": "https://github.com/desertnet/cat-tail/issues"
   },
-  "homepage": "https://github.com/desertnet/cat-herd#readme",
+  "homepage": "https://github.com/desertnet/cat-tail#readme",
   "devDependencies": {
     "babel": "^5.8.20",
     "concat-stream": "^1.5.0",
