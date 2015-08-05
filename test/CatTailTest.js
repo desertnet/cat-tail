@@ -19,5 +19,13 @@ describe("CatTail", () => {
         return done()
       }))
     })
+
+    it("should emit an error when the file does not exist", done => {
+      cat = new CatTail(["nonexistant1.txt", "nonexistant2.txt"])
+      cat.on("error", err => {
+        assert(err)
+        return done()
+      })
+    })
   })
 })
