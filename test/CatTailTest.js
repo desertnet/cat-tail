@@ -27,5 +27,13 @@ describe("CatTail", () => {
         return done()
       })
     })
+
+    it("should start from specified offset in file", done => {
+      cat = new CatTail(fixtures, { start: 2 })
+      cat.pipe(concat(result => {
+        assert.strictEqual(result.toString(), "a\nbbb\nccc\n")
+        return done()
+      }))
+    })
   })
 })
