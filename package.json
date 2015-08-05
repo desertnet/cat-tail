@@ -1,6 +1,6 @@
 {
   "name": "cat-tail",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Get a readable stream spanning an array of files",
   "main": "dist/es5/CatTail.js",
   "scripts": {
