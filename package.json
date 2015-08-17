@@ -2,7 +2,7 @@
   "name": "cat-tail",
   "version": "1.0.0",
   "description": "Get a readable stream spanning an array of files",
-  "main": "dist/es5/CatTail.js",
+  "main": "dist/es5/lib/CatTail.js",
   "scripts": {
     "test": "mocha --compilers js:babel/register",
     "compile": "babel --source-maps inline --out-dir dist/es5/lib lib",
