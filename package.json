@@ -5,8 +5,9 @@
   "main": "dist/es5/lib/CatTail.js",
   "scripts": {
     "test": "mocha --compilers js:babel/register",
-    "compile": "babel --source-maps inline --out-dir dist/es5/lib lib",
-    "preversion": "npm test && npm run compile"
+    "preversion": "npm test",
+    "prepublish": "npm run compile",
+    "compile": "rimraf dist && babel --source-maps inline --out-dir dist/es5/lib lib"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
   "devDependencies": {
     "babel": "^5.8.20",
     "concat-stream": "^1.5.0",
-    "mocha": "^2.2.5"
+    "mocha": "^2.2.5",
+    "rimraf": "^2.4.2"
   }
 }
