@@ -35,5 +35,13 @@ describe("CatTail", () => {
         return done()
       }))
     })
+
+    it("should end at the specified position in the last file", done => {
+      cat = new CatTail(fixtures, { end: 1 })
+      cat.pipe(concat(result => {
+        assert.strictEqual(result.toString(), "aaa\nbbb\ncc")
+        return done()
+      }))
+    })
   })
 })
