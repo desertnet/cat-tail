@@ -19,6 +19,7 @@ var CatTail = require("cat-tail")
 Instantiates a new `CatTail` object, which is a `Readable` stream object. It will immediately open the files in the given `files` array, reading them in order and pushing them into the stream. The `options` argument takes the standard properties for readable streams, plus the following:
 
   - `start`: Starting byte offset to begin reading from in the first file.
+  - `end`: Byte position in the last file where reading should stop.
 
 ## Contributing
 
